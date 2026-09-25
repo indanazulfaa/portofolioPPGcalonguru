@@ -219,10 +219,10 @@ ul {
 .main-nav {
   display: inline-flex;
   align-items: center;
-  gap: 36px;
+  gap: 20px;
   color: var(--muted);
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 0.98rem;
 }
 
 .main-nav a {
@@ -1077,6 +1077,11 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 32px;
+}
+
+.journey-actions {
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .journey-more-link {
@@ -2688,15 +2693,14 @@ ul {
   border-radius: 14px;
   overflow: hidden;
   z-index: 2;
-  aspect-ratio: 4 / 3;
   background: var(--sage-400);
 }
 
 .dokumentasi-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   transition: var(--transition-smooth);
 }
 
@@ -3829,6 +3833,10 @@ ul {
   object-fit: cover;
   aspect-ratio: 4/3;
 }
+.semester-documentation-grid .photo-item img {
+  object-fit: contain;
+  aspect-ratio: auto;
+}
 .photo-caption {
   padding: 8px 12px;
   font-size: 0.9rem;
@@ -4272,7 +4280,7 @@ ul {
   .dokumentasi-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
   .dokumentasi-frame { padding: 4px; border-radius: 12px; }
   .dokumentasi-frame::before { border-radius: 12px; padding: 1.5px; }
-  .dokumentasi-image { border-radius: 10px; aspect-ratio: 4 / 3; }
+  .dokumentasi-image { border-radius: 10px; }
   .dokumentasi-frame .frame-corner { width: 12px; height: 12px; border-width: 1.5px; }
   .dokumentasi-frame .frame-corner-tl, .dokumentasi-frame .frame-corner-tr { top: 6px; }
   .dokumentasi-frame .frame-corner-bl, .dokumentasi-frame .frame-corner-br { bottom: 6px; }
