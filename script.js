@@ -1,6 +1,6 @@
 (function () {
   // ============================================================
-  // MOBILE NAV TOGGLE
+  // RESPONSIVE NAV TOGGLE
   // ============================================================
   const navToggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
