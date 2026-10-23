@@ -4998,11 +4998,67 @@ h3 span {
     line-height: 1.5 !important;
 }
 
-/* 2. Mengecilkan ukuran Paragraf Deskripsi */
+/* ============================================================
+   PERBAIKAN TIPOGRAFI HALAMAN PPL MANDIRI (HERO & RUANG)
+   ============================================================ */
+
+/* 1. Bagian Deskripsi Hero (Kotak Abu-abu) */
 .ppl-detail-page .course-hero-desc p {
-    font-size: 1.05rem !important; /* Ukuran font lebih kecil dari sub-judul */
-    line-height: 1.9 !important; /* Jarak antar baris lebih renggang agar enak dibaca */
-    color: var(--muted) !important;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.05rem; /* Ukuran teks lebih kecil dari sub-judul */
+    line-height: 1.9;
+    color: var(--muted);
+}
+
+/* 2. Bagian "Pengalaman Awal" */
+.ppl-detail-page .course-early-experience p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.95rem; /* Ukuran teks lebih kecil */
+    line-height: 1.8;
+}
+
+/* Memastikan hanya teks "Pengalaman awal:" yang bold */
+.ppl-detail-page .course-early-experience strong {
+    font-weight: 700;
+    color: var(--forest-800);
+}
+
+/* 3. Bagian Sub-Judul (Teks Hijau) */
+.ppl-detail-page .course-hero-subtitle {
+    font-size: 1.25rem !important; 
+    font-weight: 600 !important;
+    color: var(--sage-600) !important;
+    margin-bottom: 16px !important;
+}
+
+/* 4. Bagian "Ruang Pembelajaran" (Section 01) */
+/* Mengatur agar deskripsi di bawah judul tidak bold dan rata kanan-kiri */
+.ppl-detail-page .section-header .section-desc {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1rem !important; /* Ukuran teks deskripsi lebih kecil */
+    font-weight: 400 !important; /* Memaksa teks menjadi normal (tidak bold) */
+    line-height: 1.9;
+    color: var(--muted);
+}
+
+/* Mengatur teks di dalam kotak "Ruang Pembelajaran" (Teks paragraf) */
+.ppl-detail-page .ruang-lingkup-body p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.95rem; /* Ukuran teks paragraf lebih kecil */
+    line-height: 1.8;
+    color: var(--muted);
+    font-weight: 400; /* Memastikan teks isi tidak bold */
+}
+
+/* Memastikan Judul Poin (h3) tetap tegas/bold */
+.ppl-detail-page .ruang-lingkup-header h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--forest-700);
     margin: 0;
 }
 
