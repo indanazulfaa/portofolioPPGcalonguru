@@ -1,6 +1,6 @@
 (function () {
   // ============================================================
-  // RESPONSIVE NAV TOGGLE
+  // RESPONSIVE NAV TOGGLE (HAMBURGER MENU)
   // ============================================================
   const navToggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
@@ -12,6 +12,7 @@
       navToggle.classList.toggle('active');
     });
 
+    // Menutup menu saat link diklik
     nav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         nav.classList.remove('is-open');
@@ -22,7 +23,7 @@
   }
 
   // ============================================================
-  // REVEAL ON SCROLL
+  // REVEAL ON SCROLL (ANIMASI SCROLL)
   // ============================================================
   const revealEls = document.querySelectorAll('.reveal');
   
@@ -68,25 +69,26 @@
   });
 
   // ============================================================
-  // ACTIVE NAV LINK HIGHLIGHT
+  // ACTIVE NAV LINK HIGHLIGHT (DETEKSI HALAMAN AKTIF)
   // ============================================================
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('.main-nav a');
   
   navLinks.forEach(function (link) {
     const href = link.getAttribute('href');
+    // Cek apakah href cocok dengan halaman saat ini
     if (href === currentPage) {
       link.classList.add('active');
     }
   });
 
   // ============================================================
-  // YEAR FOOTER
+  // YEAR FOOTER (Tahun Otomatis)
   // ============================================================
   const yearEl = document.getElementById('year');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  console.log('✨ E-Portofolio Indana Zulfa');
+  console.log('✨ E-Portofolio Indana Zulfa - Footer Diperbaiki');
 })();

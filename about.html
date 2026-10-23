@@ -38,7 +38,8 @@
             <a href="about.html" class="active">Tentang Saya</a>
             <a href="komitmen-diri.html">Komitmen Diri</a>
             <a href="pengalaman-semester-1.html">Pengalaman Semester 1</a>
-            <a href="pengalaman-semester-2.html">Pengalaman Semester 2</a><a href="ppl-terbimbing.html">PPL Terbimbing</a>
+            <a href="pengalaman-semester-2.html">Pengalaman Semester 2</a>
+            <a href="ppl-terbimbing.html">PPL Terbimbing</a>
             <a href="ppl-mandiri.html">PPL Mandiri</a>
             <a href="refleksi-akhir.html">Refleksi Akhir</a>
           </nav>
@@ -61,9 +62,11 @@
               <p class="tentang-panggilan">Agar terdengar lebih akrab, kalian bisa memanggil saya <strong>Fafa</strong></p>
             </div>
 
-            <!-- Kontainer Bio dengan Foto -->
+            <!-- Kontainer Bio dengan Foto (FLEXIBLE LAYOUT) -->
             <div class="tentang-bio-wrapper">
-              <div class="tentang-bio-text">
+              
+              <!-- KOLOM 1: TEKS BIO -->
+              <div class="tentang-bio-text bio-text-content">
                 <div class="bio-container">
                   <!-- Paragraf 1: Tempat Tinggal -->
                   <div class="bio-paragraph">
@@ -111,18 +114,20 @@
                 </div>
               </div>
 
-              <!-- Foto dengan Bingkai - DIPERBESAR -->
+              <!-- KOLOM 2: FOTO -->
               <div class="tentang-foto-wrapper">
                 <div class="foto-frame foto-frame-large">
                   <div class="foto-frame-inner">
                     <img src="assets/TentangSaya1.jpeg" alt="Indana Zulfa" />
                   </div>
+                  <!-- Dekorasi Sudut Frame -->
                   <div class="frame-corner frame-corner-tl"></div>
                   <div class="frame-corner frame-corner-tr"></div>
                   <div class="frame-corner frame-corner-bl"></div>
                   <div class="frame-corner frame-corner-br"></div>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -265,17 +270,36 @@
         </div>
 
         <div class="container footer-grid">
+          <!-- Kolom Brand -->
           <div class="footer-col footer-brand">
             <h3>E-Portofolio Indana Zulfa</h3>
             <p>Dokumentasi perjalanan dan pengembangan profesional Indana Zulfa sebagai mahasiswa PPG Calon Guru di bidang Informatika.</p>
           </div>
 
-          <div class="footer-col footer-nav"><h4>Navigasi</h4><ul><li><a href="index.html">Beranda</a></li><li><a href="about.html">Tentang Saya</a></li><li><a href="komitmen-diri.html">Komitmen Diri</a></li><li><a href="pengalaman-semester-1.html">Pengalaman Semester 1</a></li><li><a href="pengalaman-semester-2.html">Pengalaman Semester 2</a></li><li><a href="ppl-terbimbing.html">PPL Terbimbing</a></li><li><a href="ppl-mandiri.html">PPL Mandiri</a></li><li><a href="refleksi-akhir.html">Refleksi Akhir</a></li></ul></div><div class="footer-col footer-contact">
+          <!-- Kolom Navigasi -->
+          <div class="footer-col footer-nav">
+            <div class="footer-nav-wrapper">
+              <h4>Navigasi</h4>
+              <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Saya</a></li>
+                <li><a href="komitmen-diri.html">Komitmen Diri</a></li>
+                <li><a href="pengalaman-semester-1.html">Semester 1</a></li>
+                <li><a href="pengalaman-semester-2.html">Semester 2</a></li>
+                <li><a href="ppl-terbimbing.html">PPL Terbimbing</a></li>
+                <li><a href="ppl-mandiri.html">PPL Mandiri</a></li>
+                <li><a href="refleksi-akhir.html">Refleksi Akhir</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kolom Informasi Kontak -->
+          <div class="footer-col footer-contact">
             <h4>Informasi Kontak</h4>
             <ul>
               <li>
                 <i class="fas fa-envelope"></i>
-                <a href="mailto:indana.zulfa.2531537@students.um.ac.id">indana.zulfa.2531537@students.um.ac.id</a>
+                <a href="mailto:indana.zulfa.2531537@students.um.ac.id" class="contact-link">indana.zulfa.2531537@students.um.ac.id</a>
               </li>
               <li>
                 <i class="fas fa-id-card"></i>
@@ -288,7 +312,7 @@
             </ul>
           </div>
         </div>
-
+        
         <div class="container footer-bottom">
           <div class="footer-bottom-line"></div>
           <p>© 2026 Indana Zulfa • PPG E-Portofolio</p>
