@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Override khusus halaman PPL Terbimbing – membuat gambar dokumentasi menjadi persegi panjang (16:9) -->
+    <!-- Override khusus halaman PPL Terbimbing -->
     <style>
+        /* Membuat gambar dokumentasi menjadi persegi panjang (16:9) */
         .photo-item img {
             aspect-ratio: 16 / 9 !important;
             object-fit: cover !important;
         }
     </style>
 </head>
-<body>
+<body class="ppl-detail-page">
     <div class="page-shell">
 
         <!-- ===== HEADER ===== -->
@@ -47,29 +48,22 @@
         <main>
 
             <!-- ============================================================
-            SECTION 1 – HERO PAGE
+            SECTION 1 – HERO PAGE (DISAMAKAN DENGAN PPL MANDIRI)
             ============================================================ -->
             <section class="page-hero section-border">
                 <div class="container">
-                    <p class="eyebrow">PPL Terbimbing</p>
-                    <h1>PPL <span>Terbimbing</span></h1>
-                    <p class="page-subtitle">Menerapkan Pembelajaran dengan Pendampingan</p>
-
-                    <div class="hero-desc">
-                        <p class="text-justify">
-                            <strong>Deskripsi Mata Kuliah</strong><br />
-                            Praktik Pengalaman Lapangan (PPL) Terbimbing memberikan kesempatan kepada mahasiswa untuk menerapkan pengetahuan dan keterampilan pembelajaran melalui pengalaman langsung di sekolah mitra. Kegiatan ini mencakup orientasi, observasi, asistensi, dan praktik pembelajaran yang dilakukan dengan pendampingan guru pamong. Melalui kegiatan tersebut, mahasiswa mengembangkan kompetensi pedagogik dan profesional dengan menerapkan Pembelajaran Mendalam serta menghubungkan teori dari berbagai mata kuliah.
-                        </p>
+                    <p class="eyebrow">Jejak Karya · PPL</p>
+                    <h1 class="course-hero-title">Praktik Pembelajaran <span>Terbimbing</span></h1>
+                    <p class="course-hero-subtitle">Mengembangkan Rencana Pembelajaran melalui Diskusi dan Bimbingan</p>
+                    
+                    <div class="course-hero-desc reveal">
+                        <p>Praktik pembelajaran terbimbing merupakan tahap awal bagi mahasiswa untuk menerapkan pengetahuan yang diperoleh selama perkuliahan dalam kegiatan mengajar di kelas. Kegiatan ini diawali dengan menyusun rancangan pembelajaran berdasarkan hasil observasi terhadap kondisi dan kebutuhan murid. Rancangan tersebut kemudian didiskusikan bersama guru pamong dan dosen pembimbing lapangan untuk menentukan materi serta kegiatan pembelajaran yang sesuai dengan tujuan pembelajaran. Setelah memperoleh arahan dan melakukan perbaikan, mahasiswa melaksanakan pembelajaran di kelas dengan bimbingan guru pamong. Hasil pelaksanaan kemudian dievaluasi melalui refleksi dan masukan dari pembimbing sebagai dasar untuk memperbaiki proses pembelajaran berikutnya.</p>
                     </div>
 
-                    <!-- Pengalaman Awal – kontainer tipis -->
-                    <div class="early-experience">
-                        <div class="early-icon"><i class="fas fa-seedling"></i></div>
-                        <div class="early-content">
-                            <p class="text-justify">
-                                <strong>Pengalaman Awal</strong><br />
-                                Melalui PPL Terbimbing, saya memperoleh pengalaman langsung dalam memahami dinamika kelas dan menerapkan teori yang telah dipelajari untuk menghadapi permasalahan pembelajaran.
-                            </p>
+                    <div class="course-early-experience reveal">
+                        <i class="fas fa-lightbulb early-exp-icon"></i>
+                        <div class="early-exp-content">
+                            <p><strong>Pengalaman awal:</strong> Melalui PPL Terbimbing, saya memperoleh pengalaman langsung dalam memahami dinamika kelas dan menerapkan teori yang telah dipelajari untuk menghadapi permasalahan pembelajaran. Proses pendampingan ini menjadi bekal penting sebelum melangkah ke tahap praktik mandiri.</p>
                         </div>
                     </div>
                 </div>
@@ -435,8 +429,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Tombol "Lihat Semua Dokumentasi" telah dihapus sesuai permintaan -->
-
                             </div>
                         </div>
                     </div>
@@ -468,7 +460,7 @@
             <p>Dokumentasi perjalanan dan pengembangan profesional Indana Zulfa sebagai mahasiswa PPG Calon Guru di bidang Informatika.</p>
           </div>
 
-          <!-- Kolom Navigasi (Diperbaiki) -->
+          <!-- Kolom Navigasi -->
           <div class="footer-col footer-nav">
             <div class="footer-nav-wrapper">
               <h4>Navigasi</h4>
@@ -485,7 +477,7 @@
             </div>
           </div>
 
-          <!-- Kolom Informasi Kontak (Diperbaiki) -->
+          <!-- Kolom Informasi Kontak -->
           <div class="footer-col footer-contact">
             <h4>Informasi Kontak</h4>
             <ul>
