@@ -5540,6 +5540,429 @@ h3 span {
 }
 
 /* ============================================================
+   FINAL MASTER STYLES: HALAMAN INOVASI PEMBELAJARAN (EXCEL MANIA)
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. HERO SECTION (Teks Kiri, Gambar Kanan Menyatu)
+   ------------------------------------------------------------ */
+.inovasi-hero-grid {
+  display: grid !important;
+  grid-template-columns: 1.15fr 0.85fr !important; 
+  gap: 40px !important;
+  align-items: center !important;
+}
+
+.inovasi-hero-copy {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.inovasi-hero-copy .course-hero-desc {
+  margin-top: 24px !important;
+  padding: 24px !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+  border: 1px solid rgba(33, 78, 63, 0.08) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.inovasi-hero-copy .course-hero-desc p {
+  font-size: 0.95rem !important;
+  line-height: 1.9 !important;
+  color: var(--muted) !important;
+  margin: 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+/* PERBAIKAN MUTLAK: BINGKAI GAMBAR HERO (LANDSCAPE ASLI) */
+.inovasi-image-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.inovasi-page .inovasi-image-frame {
+  padding: 8px !important; 
+  background: #ffffff !important; 
+  border: 2px solid var(--sage-500) !important; 
+  border-radius: 20px !important; 
+  box-shadow: 0 10px 30px rgba(24, 55, 47, 0.1) !important; 
+  overflow: hidden !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  display: inline-block !important; 
+  width: 100% !important;
+}
+
+.inovasi-page .inovasi-image-card {
+  border-radius: 12px !important; 
+  overflow: hidden !important;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  display: block !important;
+  width: 100% !important;
+  background: transparent !important;
+}
+
+.inovasi-page .inovasi-image-card img {
+  width: 100% !important;
+  height: auto !important; 
+  max-height: none !important;
+  display: block !important;
+  object-fit: contain !important; /* Memastikan gambar utuh tidak terpotong */
+  object-position: center !important;
+  border-radius: 12px !important;
+  margin: 0 !important;
+}
+
+/* Sembunyikan elemen dekorasi bawaan agar tidak mengganggu */
+.inovasi-image-frame .frame-corner,
+.inovasi-image-frame .frame-line {
+  display: none !important; 
+}
+
+/* ------------------------------------------------------------
+   2. DESKRIPSI SECTION & PARAGRAF NORMAL (Rata Kanan-Kiri)
+   ------------------------------------------------------------ */
+.inovasi-page .section-desc,
+.inovasi-page .section-head-topics .section-desc,
+.inovasi-page .course-topics-section > .container > p,
+.inovasi-page .refleksi-content-card > p,
+.inovasi-page .refleksi-content-card > div > p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  font-size: 1rem !important;
+  line-height: 1.9 !important;
+  color: var(--muted) !important;
+  display: block !important;
+  margin-bottom: 16px !important;
+}
+
+/* ------------------------------------------------------------
+   3. SUB-JUDUL TAHAPAN (Tahap 1, Bagian 1, dll)
+   ------------------------------------------------------------ */
+.inovasi-page .refleksi-subheading {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin: 40px 0 20px 0 !important;
+  padding-bottom: 12px !important;
+  border-bottom: 2px solid rgba(172, 201, 167, 0.6) !important; 
+  font-family: "Playfair Display", serif !important; 
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: var(--forest-800) !important;
+}
+
+.inovasi-page .refleksi-subheading i {
+  color: var(--sage-500) !important;
+  font-size: 1.2rem !important;
+  background: rgba(172, 201, 167, 0.15) !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* ------------------------------------------------------------
+   4. KOTAK KONTEN (Card Putih)
+   ------------------------------------------------------------ */
+.inovasi-page .refleksi-content-card {
+  background: #ffffff !important;
+  padding: 30px !important;
+  border-radius: var(--radius-md) !important;
+  border: 1px solid rgba(33, 78, 63, 0.08) !important;
+  box-shadow: 0 4px 15px rgba(24, 55, 47, 0.03) !important;
+  margin-bottom: 30px !important;
+}
+
+/* ------------------------------------------------------------
+   5. POIN-POIN (MINI-CARDS) - GRID 2 KOLOM
+   ------------------------------------------------------------ */
+.inovasi-page .refleksi-content-card ul.refleksi-ol,
+.inovasi-page .refleksi-content-card ol.refleksi-ol {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important; 
+  gap: 16px !important; 
+}
+
+.inovasi-page .refleksi-content-card ul.refleksi-ol > li,
+.inovasi-page .refleksi-content-card ol.refleksi-ol > li {
+  background: rgba(255, 255, 255, 0.7) !important;
+  border: 1px solid rgba(33, 78, 63, 0.1) !important;
+  border-left: 4px solid var(--sage-500) !important; 
+  border-radius: 12px !important;
+  padding: 16px 20px !important;
+  box-shadow: 0 2px 10px rgba(24, 55, 47, 0.04) !important;
+  position: relative !important;
+  font-size: 0.95rem !important;
+  line-height: 1.8 !important;
+  color: var(--muted) !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  height: 100% !important; 
+  display: block !important;
+}
+
+.inovasi-page .refleksi-content-card ul.refleksi-ol > li > strong,
+.inovasi-page .refleksi-content-card ol.refleksi-ol > li > strong {
+  display: block !important;
+  font-size: 1.05rem !important;
+  color: var(--forest-800) !important;
+  margin-bottom: 6px !important;
+  font-weight: 700 !important;
+}
+
+.inovasi-page .refleksi-content-card ul.refleksi-ol > li > br,
+.inovasi-page .refleksi-content-card ol.refleksi-ol > li > br {
+  display: none !important;
+}
+
+/* Custom Angka <ol> */
+.inovasi-page .refleksi-content-card ol.refleksi-ol {
+  counter-reset: custom-counter !important;
+}
+.inovasi-page .refleksi-content-card ol.refleksi-ol > li {
+  counter-increment: custom-counter !important;
+  padding-left: 56px !important;
+}
+.inovasi-page .refleksi-content-card ol.refleksi-ol > li::before {
+  content: counter(custom-counter) !important;
+  position: absolute !important;
+  left: 16px !important;
+  top: 16px !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: var(--sage-500) !important;
+  color: var(--white) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+}
+
+/* Custom Icon <ul> */
+.inovasi-page .refleksi-content-card ul.refleksi-ol > li {
+  padding-left: 48px !important;
+}
+.inovasi-page .refleksi-content-card ul.refleksi-ol > li::before {
+  content: "\f0da" !important; 
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  position: absolute !important;
+  left: 20px !important;
+  top: 18px !important;
+  color: var(--sage-500) !important;
+  font-size: 1rem !important;
+}
+
+/* ------------------------------------------------------------
+   6. PERBAIKAN TOTAL TABEL (REFLEKSI-TABLE)
+   ------------------------------------------------------------ */
+.inovasi-page .refleksi-table-wrap {
+  width: 100% !important;
+  overflow-x: auto !important;
+  margin-top: 20px !important;
+  margin-bottom: 24px !important;
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  border: 2px solid var(--forest-700) !important;
+  box-shadow: 0 4px 15px rgba(24, 55, 47, 0.05) !important;
+  display: block !important;
+}
+
+.inovasi-page .refleksi-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  text-align: left !important;
+  font-size: 0.95rem !important;
+  margin: 0 !important;
+}
+
+.inovasi-page .refleksi-table thead tr {
+  background-color: var(--forest-700) !important;
+  background: var(--forest-700) !important;
+}
+
+.inovasi-page .refleksi-table th {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  padding: 16px 20px !important;
+  border-bottom: 2px solid var(--forest-800) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+  letter-spacing: 0.03em !important;
+  text-transform: uppercase !important;
+  font-size: 0.9rem !important;
+}
+
+.inovasi-page .refleksi-table td {
+  padding: 16px 20px !important;
+  border-bottom: 1px solid rgba(33, 78, 63, 0.2) !important; 
+  border-right: 1px solid rgba(33, 78, 63, 0.1) !important; 
+  color: var(--muted) !important;
+  line-height: 1.7 !important;
+  vertical-align: top !important;
+  text-align: left !important;
+  background-color: #ffffff !important;
+}
+
+.inovasi-page .refleksi-table th:last-child,
+.inovasi-page .refleksi-table td:last-child {
+  border-right: none !important;
+}
+
+.inovasi-page .refleksi-table tbody tr:nth-child(even) td {
+  background-color: rgba(172, 201, 167, 0.08) !important;
+}
+
+.inovasi-page .refleksi-td-focus {
+  font-weight: 600 !important;
+  color: var(--forest-700) !important;
+}
+
+.inovasi-page .refleksi-table ul,
+.inovasi-page .refleksi-table ol {
+  display: block !important;
+  list-style-type: disc !important;
+  padding-left: 20px !important;
+  margin: 0 !important;
+}
+
+/* ------------------------------------------------------------
+   7. GAYA GAMBAR DI DALAM SECTION (DIPERKECIL & DI TENGAH)
+   ------------------------------------------------------------ */
+.inovasi-page .standalone-doc-wrapper .dokumentasi-frame {
+  max-width: 650px !important; 
+  width: 100% !important;
+  margin: 0 auto !important; 
+  padding: 10px !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(24, 55, 47, 0.08) !important;
+  border: 1px solid rgba(33, 78, 63, 0.1) !important;
+}
+
+.inovasi-page .standalone-doc-wrapper .dokumentasi-image {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.inovasi-page .standalone-doc-wrapper .dokumentasi-image img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.inovasi-page .standalone-doc-wrapper .keunikan-image-caption {
+  text-align: center !important;
+  margin-top: 16px !important;
+  font-size: 0.95rem !important;
+  color: var(--forest-700) !important;
+  font-weight: 600 !important;
+}
+
+/* ------------------------------------------------------------
+   8. LINK BUKA DOKUMEN (SECTION 3)
+   ------------------------------------------------------------ */
+.inovasi-page .appendix-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 8px 16px !important;
+  background-color: rgba(172, 201, 167, 0.15) !important;
+  border: 1.5px solid var(--forest-700) !important;
+  border-radius: 8px !important;
+  color: var(--forest-700) !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  white-space: nowrap !important;
+}
+
+.inovasi-page .appendix-link:hover {
+  background-color: var(--forest-700) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 10px rgba(24, 55, 47, 0.15) !important;
+}
+
+/* ------------------------------------------------------------
+   9. RESPONSIF (TABLET & HP)
+   ------------------------------------------------------------ */
+@media (max-width: 992px) {
+  .inovasi-hero-grid {
+    grid-template-columns: 1fr !important; 
+    gap: 30px !important;
+  }
+
+  .inovasi-hero-copy {
+    order: 2 !important; 
+  }
+
+  .inovasi-hero-visual {
+    order: 1 !important; 
+  }
+}
+
+@media (max-width: 768px) {
+  /* List kembali jadi 1 kolom di layar HP/Tablet */
+  .inovasi-page .refleksi-content-card ul.refleksi-ol,
+  .inovasi-page .refleksi-content-card ol.refleksi-ol {
+    grid-template-columns: 1fr !important; 
+  }
+
+  /* Gambar Section full width di HP */
+  .inovasi-page .standalone-doc-wrapper .dokumentasi-frame {
+    max-width: 100% !important; 
+    padding: 6px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .inovasi-page .refleksi-content-card ol.refleksi-ol > li {
+    padding-left: 48px !important;
+  }
+
+  .inovasi-page .refleksi-content-card ul.refleksi-ol > li {
+    padding-left: 40px !important;
+  }
+
+  .inovasi-page .refleksi-content-card ol.refleksi-ol > li::before {
+    left: 12px !important;
+    width: 24px !important;
+    height: 24px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .inovasi-page .refleksi-content-card ul.refleksi-ol > li::before {
+    left: 14px !important;
+  }
+
+  .inovasi-page .refleksi-table th,
+  .inovasi-page .refleksi-table td {
+    padding: 12px 14px !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+/* ============================================================
    PERBAIKAN TATA LETAK ANALISIS NON-MENGAJAR (PPL MANDIRI)
    ============================================================ */
 
